@@ -1,0 +1,47 @@
+.stub-page {
+  min-height: 100vh;
+  padding: 20px;
+  background: #f9fafb;
+}
+
+.stub-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.btn-back {
+  background: white;
+  border: 1px solid #e5e7eb;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: #6b7280;
+  transition: all 0.3s ease;
+}
+
+.btn-back:hover {
+  background: #f3f4f6;
+  border-color: #10b981;
+  color: #10b981;
+}
+
+.stub-header h1 {
+  color: #1f2937;
+}
+
+.stub-content {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.stub-content p {
+  color: #6b7280;
+  font-size: 1.1rem;
+}

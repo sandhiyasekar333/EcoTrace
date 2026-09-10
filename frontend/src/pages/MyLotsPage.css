@@ -1,0 +1,259 @@
+.my-lots-page {
+  min-height: 100vh;
+  background: #f5faf7;
+  padding: 32px 20px 60px;
+  color: #173b33;
+}
+
+.my-lots-header {
+  max-width: 1100px;
+  margin: 0 auto 28px;
+}
+
+.lots-back-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  border: none;
+  background: transparent;
+  color: #266b59;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 18px;
+}
+
+.lots-eyebrow {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+  font-size: 0.78rem;
+  color: #16835f;
+  font-weight: 700;
+}
+
+.my-lots-header h1 {
+  margin: 6px 0 8px;
+  font-size: 2.3rem;
+}
+
+.lots-subtitle {
+  margin: 0;
+  color: #6a7e77;
+}
+
+.lots-container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.lots-summary {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.lots-summary > div {
+  background: white;
+  border-radius: 18px;
+  padding: 18px 22px;
+  border: 1px solid #dcebe5;
+}
+
+.lots-summary span {
+  display: block;
+  color: #778981;
+  font-size: 0.9rem;
+}
+
+.lots-summary strong {
+  display: block;
+  margin-top: 4px;
+  font-size: 1.8rem;
+  color: #17694f;
+}
+
+.lots-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.lot-card {
+  background: white;
+  border-radius: 22px;
+  padding: 22px;
+  border: 1px solid #dcebe5;
+  box-shadow: 0 10px 32px rgba(25, 85, 65, 0.07);
+}
+
+.lot-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.lot-label,
+.detail-label {
+  display: block;
+  font-size: 0.75rem;
+  color: #81948d;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.lot-card h2 {
+  margin: 4px 0 0;
+  font-size: 1.3rem;
+}
+
+.status-badge {
+  background: #e5f7ef;
+  color: #147150;
+  padding: 7px 12px;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.device-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: #f6fbf8;
+  padding: 15px;
+  border-radius: 16px;
+  margin-bottom: 18px;
+}
+
+.device-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 13px;
+  background: #dcf3e9;
+  color: #187357;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.device-row strong,
+.device-row small {
+  display: block;
+}
+
+.device-row small {
+  color: #81948d;
+  margin-top: 3px;
+}
+
+.lot-details {
+  display: grid;
+  gap: 14px;
+}
+
+.detail-item {
+  display: flex;
+  gap: 11px;
+  align-items: flex-start;
+  color: #26735c;
+}
+
+.detail-item span {
+  display: block;
+  color: #7b8d86;
+  font-size: 0.8rem;
+}
+
+.detail-item strong {
+  display: block;
+  color: #173b33;
+  margin-top: 2px;
+}
+
+.detail-item small {
+  display: block;
+  color: #81948d;
+  margin-top: 2px;
+}
+
+.view-passport-button {
+  width: 100%;
+  margin-top: 20px;
+  border: none;
+  border-radius: 14px;
+  padding: 13px 16px;
+  background: #16835f;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.view-passport-button:hover {
+  background: #126e50;
+}
+
+.lots-empty {
+  background: white;
+  border-radius: 22px;
+  padding: 50px 24px;
+  text-align: center;
+  border: 1px solid #dcebe5;
+}
+
+.lots-empty svg {
+  color: #16835f;
+}
+
+.lots-empty h2 {
+  margin-bottom: 8px;
+}
+
+.lots-empty p {
+  color: #75877f;
+}
+
+.primary-button {
+  margin-top: 14px;
+  border: none;
+  background: #16835f;
+  color: white;
+  border-radius: 13px;
+  padding: 12px 22px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+@media (max-width: 750px) {
+  .lots-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .lots-summary {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .my-lots-header h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .my-lots-page {
+    padding: 22px 14px 50px;
+  }
+
+  .lots-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .lot-card-top {
+    flex-direction: column;
+  }
+}
